@@ -44,20 +44,19 @@
   @screen sm {
     .alpha {
       font-size: 85px;
-      -webkit-text-stroke: 4px #ffffff;
     }
   }
 
   @screen md {
     .alpha {
-      font-size: 140px;
-      -webkit-text-stroke: 4px #ffffff;
+      font-size: 100px;
+      -webkit-text-stroke: 3px #ffffff;
     }
   }
 
   @screen xl {
     .alpha {
-      font-size: 170px;
+      font-size: 120px;
     }
   }
 
