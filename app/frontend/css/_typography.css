@@ -30,10 +30,16 @@
     url('../fonts/Merriweather/Merriweather-Bold.woff') format('woff');
 }
 
+body {
+  font-family: 'Merriweather', times, serif;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
 @responsive {
   .alpha {
     font-family: 'Chivo', Helvetica, sans-serif;
-    font-weight: 700;
+    @apply font-bold;
     font-size: 62px;
     line-height: 0.9;
     -webkit-text-stroke: 2px #ffffff;
@@ -60,6 +66,14 @@
     }
   }
 
+  .stroke-blue {
+    -webkit-text-stroke-color: #00dcff;
+  }
+
+  .stroke-pink {
+    -webkit-text-stroke-color: #ffc7db;
+  }
+
   .robinson {
     font-size: 0.75em;
   }
@@ -72,7 +86,7 @@
 
   .bravo {
     font-family: 'Chivo', Helvetica, sans-serif;
-    font-weight: 700;
+    @apply font-bold;
     font-size: 50px;
     line-height: 1;
     -webkit-text-stroke: 1px #ffffff;
@@ -95,7 +109,7 @@
 
   .charlie {
     font-family: 'Chivo', Helvetica, sans-serif;
-    font-weight: 700;
+    @apply font-bold;
     font-size: 26px;
     line-height: 1.2;
     -webkit-text-stroke: 0;
@@ -116,23 +130,9 @@
     }
   }
 
-  .paragraph-lg {
-    font-family: 'Chivo', Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 1.2;
-    letter-spacing: 0.1px;
-  }
-
-  @screen md {
-    .paragraph-lg {
-      font-size: 26px;
-    }
-  }
-
   .paragraph {
     font-family: 'Merriweather', times, serif;
-    font-weight: 400;
+    @apply font-normal;
     line-height: 1.7;
     font-size: 14px;
     letter-spacing: 0.6px;
@@ -150,10 +150,16 @@
     }
   }
 
+  .paragraph--lg {
+    font-size: 24px;
+    @apply font-bold;
+    letter-spacing: 0;
+  }
+
   .button {
     font-family: 'Merriweather', times, serif;
-    font-weight: 700;
-    line-height: 1;
+    @apply font-bold;
+    line-height: 1.2;
     font-size: 14px;
     position: relative;
     transition: color 0.3s;
@@ -174,7 +180,6 @@
   transform: translate(-11%, -20%);
   transform-origin: center;
   background-color: transparent;
-  z-index: -1;
 }
 
 .button::after {
@@ -204,6 +209,29 @@
   }
 
   .button:hover {
+    color: #ffc7db;
+  }
+}
+
+.button--invert::after {
+  width: 0;
+}
+
+@screen lg {
+  .button--invert:hover::after {
+    width: 80%;
+  }
+  .button--invert:hover {
+    color: #ffc7db;
+  }
+}
+
+@screen md {
+  .button--invert:hover::after {
+    width: 80%;
+  }
+
+  .button--invert:hover {
     color: #ffc7db;
   }
 }

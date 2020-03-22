@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const updateBackground = () => {
     const windowScroll = window.pageYOffset
     colorSectionData.forEach(({ offset, classes }) => {
-      if (windowScroll + 500 >= offset) {
+      if (windowScroll + 300 >= offset) {
         backgroundTag.className = classes
       }
     })
