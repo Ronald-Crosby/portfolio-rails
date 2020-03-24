@@ -1,8 +1,10 @@
 @import './_grid.css';
 @import './_typography.css';
+@import './_buttons.css';
 @import './_svg.css';
-/* @import './_header.css'; */
+@import './_header.css';
 @import './_footer.css';
+@import './_hero.css';
 
 html {
   scroll-behavior: smooth;
