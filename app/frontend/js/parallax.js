@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     parallaxData.forEach(data => {
       if (windowBottom >= data.elTop && data.elBottom >= window.pageYOffset) {
-        // console.log('the element should be in view')
         if (data.isRotate) {
           data.elem.style.transform = `rotate(${(data.elBottom - windowBottom) * data.speed}deg)`
         } else if (data.isScroll) {
@@ -39,16 +38,16 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     })
   }
-
-  window.addEventListener('scroll', updateParallax)
   getData()
 
   function checkScreen() {
     if (window.innerWidth > 768) {
+      console.log('window is big enough')
       updateParallax()
     }
   }
 
   checkScreen()
-  window.addEventListener('resize', checkScreen())
+  window.addEventListener('scroll', checkScreen)
+  window.addEventListener('resize', checkScreen)
 })

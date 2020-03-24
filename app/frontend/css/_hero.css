@@ -2,3 +2,13 @@
   margin-top: 85px;
   height: calc(100vh - 101px);
 }
+
+.project-row {
+  @apply mb-20;
+}
+
+@screen md {
+  .project-row {
+    margin-bottom: 28rem;
+  }
+}
