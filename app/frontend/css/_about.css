@@ -1,0 +1,12 @@
+.background-stripe::before {
+  content: '';
+  @apply absolute;
+  @apply bg-pink;
+  width: 150%;
+  height: 35%;
+  bottom: 10%;
+  left: -20%;
+  opacity: 0.5;
+  @apply z-10;
+  transform: rotate(-25deg);
+}

@@ -5,6 +5,7 @@
 @import './_header.css';
 @import './_footer.css';
 @import './_hero.css';
+@import './_about.css';
 
 html {
   scroll-behavior: smooth;
@@ -30,6 +31,7 @@ body {
   transition: background-color 0.5s linear;
 }
 
-main {
-  overflow: hidden;
+.section {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

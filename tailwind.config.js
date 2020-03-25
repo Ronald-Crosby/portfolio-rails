@@ -14,6 +14,9 @@ module.exports = {
       grey: '#353535',
       white: '#ffffff',
     },
+    borderRadius: {
+      xl: '1rem',
+    },
   },
   variants: {},
   plugins: [],
