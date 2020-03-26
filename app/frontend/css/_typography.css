@@ -130,6 +130,22 @@ body {
     }
   }
 
+  .about-box .charlie {
+    font-size: 20px;
+  }
+
+  @screen md {
+    .about-box .charlie {
+      font-size: 26px;
+    }
+  }
+
+  @screen lg {
+    .about-box .charlie {
+      font-size: 30px;
+    }
+  }
+
   .paragraph {
     font-family: 'Merriweather', times, serif;
     @apply font-normal;
