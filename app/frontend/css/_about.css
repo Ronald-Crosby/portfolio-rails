@@ -3,10 +3,32 @@
   @apply absolute;
   @apply bg-pink;
   width: 150%;
-  height: 25%;
-  bottom: 20%;
+  height: 20%;
+  bottom: 15%;
   left: -20%;
   opacity: 0.5;
   @apply z-10;
-  transform: rotate(-25deg);
+  transform: rotate(-20deg);
+}
+
+.dark-circle {
+  @apply absolute;
+  display: none;
+  width: 500px;
+  height: 500px;
+}
+
+@screen sm {
+  .dark-circle {
+    display: inline-block;
+    right: -15%;
+    top: 5%;
+  }
+}
+
+@screen xl {
+  .dark-circle {
+    right: 5%;
+    top: 2%;
+  }
 }
