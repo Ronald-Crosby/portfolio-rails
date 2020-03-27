@@ -3,7 +3,7 @@
     content: attr(data-text);
     position: absolute;
     @apply inset-0;
-    top: 16px;
+    top: 12px;
     @apply w-full;
     @apply h-full;
     -webkit-text-fill-color: white;
