@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const $$elements = document.querySelectorAll('.js-parallax')
 
   let bodyTop = document.querySelector('body').getBoundingClientRect().top
@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function checkScreen() {
     if (window.innerWidth > 768) {
-      console.log('window is big enough')
       updateParallax()
     }
   }
